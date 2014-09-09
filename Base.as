@@ -1,0 +1,1 @@
+﻿package  {	import flash.display.MovieClip;	import flash.display.Loader;	import flash.net.URLRequest;	import flash.events.MouseEvent;	import flash.events.Event;		public class Base extends MovieClip{		public var cargador:Loader;		public var req:URLRequest;		public var pelicula:Object;		function descargar(){			trace("entra");		}	}	}
