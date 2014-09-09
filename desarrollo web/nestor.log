@@ -1,0 +1,6 @@
+POST: {"cedula":"1234567890","Enviar":"Enviar"}POST: {"cedula":"1234567890","Enviar":"Enviar consulta"}POST: {"cedula":"1122334455","Enviar":"Enviar"}POST: {"cedula":"1234567890","Enviar":"Enviar consulta"}
+c: 1
+procesado
+POST: {"cedula":"1234567890","Enviar":"Enviar"}
+c: 1
+procesado
