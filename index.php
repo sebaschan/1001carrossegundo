@@ -39,7 +39,7 @@ if ($user) {
   
 } else {
 
-  $loginUrl = $facebook->getLoginUrl(array('redirect_uri' => 'https://www.facebook.com/1001carros?sk=app_173715872813876', 'scope' => 'user_birthday,publish_stream,email, user_hometown, user_photos'));
+  $loginUrl = $facebook->getLoginUrl(array('redirect_uri' => 'https://www.facebook.com/1001carros?sk=app_173715872813876', 'scope' => 'user_birthday,publish_stream,email, user_hometown, user_photos, user_friends'));
 
 }
 
