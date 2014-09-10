@@ -1,5 +1,4 @@
 <?php
-    session_start();
 
 	$databasehost = "localhost";
 	$databasename = "eadvert1_1001aniversario";
@@ -7,13 +6,12 @@
 	$databasepassword = "Milunani2014!";
 
     function procesar($post) {
-		$_SESSION['cedula'] = $post['cedula'];
 		echo '
 			<html>
 			    <script>
 				function load()
 					{
-						window.location ="retos.php";
+						window.location ="retos.php?cedula='.$post['cedula'].'";
 					}
 				</script>
 				</head>

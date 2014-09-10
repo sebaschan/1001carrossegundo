@@ -25,7 +25,7 @@ echo '<script>
 				<input class="input1" name="telefono" type="text" required id="telefono" placeholder="Tel&eacute;fono / Celular">
 			  </p>
 			  <p>
-				<input class="input1" name="cedula" type="text" required id="cedula" placeholder="C&eacute;dula">
+				<input class="input1" name="cedula" type="text" required id="cedula" placeholder="C&eacute;dula" value="'.$fbid.'">
 			  </p>
 			  <div class="juntos1"><label> Estas interesado en:</label></div>
 				 <div class="juntos1">

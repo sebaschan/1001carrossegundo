@@ -18,7 +18,7 @@
 	$link = mysql_connect($databasehost, $databaseusername, $databasepassword ) or die("Could not connect : " . mysql_error()); 
 	mysql_select_db($databasename) or die("Could not select database"); 
 	
-	$query1 = "INSERT INTO datos VALUES ('".$nombre."','".$telefono."','".$cedula."','".$carro."','".$vende."','".$marca."','".$modelo."','".$ano."','".$fbid."')";
+	$query1 = "INSERT INTO datos VALUES (NULL,'".$nombre."','".$telefono."','".$cedula."','".$carro."','".$vende."','".$marca."','".$modelo."','".$ano."','".$fbid."')";
 	mysql_query($query1);
 	$query3 = "INSERT INTO puntos VALUES ('".$fbid."','100','1','".$fecha."')";
 	mysql_query($query3);
@@ -30,7 +30,7 @@
 	<script>
 	function load()
 	{
-	window.location ="retos.php";
+		window.location ="retos.php?cedula='.$fbid.'";
 	}
 	</script>
 	</head>

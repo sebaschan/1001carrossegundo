@@ -41,7 +41,7 @@
   <script>
 	function load()
 		{
-			window.location ="login.php";
+			window.location ="retos.php?cedula='.$fbid.'";
 		}
 	</script>
 </head>
