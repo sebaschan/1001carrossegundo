@@ -204,6 +204,16 @@ INSERT INTO `usuarios` (`fbid`, `nombre`, `apellido`, `username`, `email`, `cump
 ('1377003665', 'Dario N', 'Toapanta', 'darion.toapanta', 'enigmasdelmasalla@hotmail.com', '02/27/1987', 'male', 'Quito, Ecuador'),
 ('100002607004773', 'Laura', 'CalderÃ³n Jaramillo', 'laura.calderonjaramillo', 'caljala@live.com', '08/24/1955', 'female', '');
 
+DROP TABLE IF EXISTS `invita`;
+CREATE TABLE IF NOT EXISTS `invita` (
+  `id` int(11) NOT NULL,
+  `fbid` varchar(255) NOT NULL,
+  `invreq` varchar(20) NOT NULL,
+  `fbids` text NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `fbid` (`fbid`,`invreq`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
