@@ -83,6 +83,14 @@ if ($user) {
 	border-radius: 5px;
 	height: 30px;
 	}
+	.input2 {
+		background: none;
+		border: 1px solid #999;
+		width: 110px;
+		border-radius: 5px;
+		height: 30px;
+		margin: 2px 0px;
+	}
 	label {
 		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 		color: #4b4b4b;
@@ -230,13 +238,19 @@ if ($user) {
 	}	
 	
 	if($aprobados == 2){
+		include "armacarro.php";
+	}
+	
+	if($aprobados == 3){
 		echo '<a href="http://www.1001carros.com/index.php/catalogsearch/advanced/result/?marca[]=todos&marca[]=62&marca[]=61&marca[]=60&marca[]=55&marca[]=53&marca[]=87&marca[]=88&marca[]=92&marca[]=93&marca[]=3562&marca[]=98&marca[]=100&marca[]=101&marca[]=104&marca[]=105&marca[]=106&marca[]=77&marca[]=78&marca[]=81&marca[]=83&marca[]=85&marca[]=86&marca[]=72&marca[]=75&year_rango1[]=&year_rango2[]=" target="_top"><div style="width:810px; height:600px; background:url(proximo.jpg) no-repeat top center">
 				<div class="puntos">'.$puntos.'</div>
 				</div></a>';
 	}
 	
-	if($aprobados == 3){
-		echo 'cuarto reto';	
+	if($aprobados == 4){
+		echo '<a href="http://www.1001carros.com/index.php/catalogsearch/advanced/result/?marca[]=todos&marca[]=62&marca[]=61&marca[]=60&marca[]=55&marca[]=53&marca[]=87&marca[]=88&marca[]=92&marca[]=93&marca[]=3562&marca[]=98&marca[]=100&marca[]=101&marca[]=104&marca[]=105&marca[]=106&marca[]=77&marca[]=78&marca[]=81&marca[]=83&marca[]=85&marca[]=86&marca[]=72&marca[]=75&year_rango1[]=&year_rango2[]=" target="_top"><div style="width:810px; height:600px; background:url(proximo.jpg) no-repeat top center">
+				<div class="puntos">'.$puntos.'</div>
+				</div></a>';
 	}
 	
 	?>
