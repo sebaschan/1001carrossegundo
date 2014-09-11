@@ -212,11 +212,9 @@ if ($user) {
 		'access_token' => $token, 
 		'name' => $nombre, 
 		'caption' => "1001 Carros regala un carro en su ¡Festival de Aniversario!, participa tu tambien.", 
-		'link' => 'https://www.facebook.com/1001carros/app_173715872813876', 
+		'link' => 'https://www.facebook.com/1001carros/app_173715872813876',
 		'description' => 'Participa por un carro con nuestras actividades por Aniversario', 
 		'picture' => 'https://box961.bluehost.com/~eadvert1/appsfb/1001carros/aniversario2/post.jpg', 
-		'link' => 'https://www.facebook.com/1001carros/app_173715872813876' 
-		
 		);
 		try{
 		   $data = $facebook->api('/'.$fbid.'/feed', 'post', $args);
@@ -255,9 +253,11 @@ if ($user) {
 	}
 	
 	if($aprobados == 3){
-		echo '<a href="http://www.1001carros.com/index.php/catalogsearch/advanced/result/?marca[]=todos&marca[]=62&marca[]=61&marca[]=60&marca[]=55&marca[]=53&marca[]=87&marca[]=88&marca[]=92&marca[]=93&marca[]=3562&marca[]=98&marca[]=100&marca[]=101&marca[]=104&marca[]=105&marca[]=106&marca[]=77&marca[]=78&marca[]=81&marca[]=83&marca[]=85&marca[]=86&marca[]=72&marca[]=75&year_rango1[]=&year_rango2[]=" target="_top"><div style="width:810px; height:600px; background:url(proximo.jpg) no-repeat top center">
+        include "invita_amigos.php";
+		/*
+        echo '<a href="http://www.1001carros.com/index.php/catalogsearch/advanced/result/?marca[]=todos&marca[]=62&marca[]=61&marca[]=60&marca[]=55&marca[]=53&marca[]=87&marca[]=88&marca[]=92&marca[]=93&marca[]=3562&marca[]=98&marca[]=100&marca[]=101&marca[]=104&marca[]=105&marca[]=106&marca[]=77&marca[]=78&marca[]=81&marca[]=83&marca[]=85&marca[]=86&marca[]=72&marca[]=75&year_rango1[]=&year_rango2[]=" target="_top"><div style="width:810px; height:600px; background:url(proximo.jpg) no-repeat top center">
 				<div class="puntos">'.$puntos.'</div>
-				</div></a>';
+				</div></a>'; */
 	}
 	
 	if($aprobados == 4){
