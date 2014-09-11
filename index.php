@@ -62,6 +62,16 @@ if ($user) {
       h1 a:hover {
         text-decoration: underline;
       }
+      .center {
+          transform: translate(-50%, -50%);
+          -wekit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          left: 50%;
+          top: 50%;
+          position: absolute
+      }
 	  .nparti {
 		font-family: Helvetica;
 		font-size: 20px;
