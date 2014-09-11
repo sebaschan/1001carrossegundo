@@ -72,6 +72,9 @@ if ($user) {
           top: 50%;
           position: absolute
       }
+      .clickable {
+          cursor: pointer;
+      }
 	  .nparti {
 		font-family: Helvetica;
 		font-size: 20px;
