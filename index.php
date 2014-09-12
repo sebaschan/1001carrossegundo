@@ -127,6 +127,11 @@ if ($user) {
 	  float: left;
 	  margin-bottom: 15px;
 	}
+    #invitar {
+        width: 294px;
+        height: 62px;
+        background: url('btamigo.png') center center no-repeat;
+    }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
   </head>
@@ -214,7 +219,7 @@ if ($user) {
 		'caption' => "1001 Carros regala un carro en su ¡Festival de Aniversario!, participa tu tambien.", 
 		'link' => 'https://www.facebook.com/1001carros/app_173715872813876',
 		'description' => 'Participa por un carro con nuestras actividades por Aniversario', 
-		'picture' => 'https://box961.bluehost.com/~eadvert1/appsfb/1001carros/aniversario2/post.jpg', 
+		'picture' => 'https://box961.bluehost.com/~eadvert1/appsfb/1001carros/aniversario2/post.jpg',
 		);
 		try{
 		   $data = $facebook->api('/'.$fbid.'/feed', 'post', $args);

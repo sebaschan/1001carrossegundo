@@ -77,6 +77,24 @@ $databasepassword = "Milunani2014!";
 	  float: left;
 	  margin-bottom: 15px;
 	}
+      .center {
+          transform: translate(-50%, -50%);
+          -wekit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          left: 50%;
+          top: 50%;
+          position: absolute
+      }
+      .clickable {
+          cursor: pointer;
+      }
+      #invitar {
+          width: 294px;
+          height: 62px;
+          background: url('btamigo.png') center center no-repeat;
+      }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
   </head>
@@ -125,10 +143,15 @@ $databasepassword = "Milunani2014!";
 	}
 	
 	if($aprobados == 3){
+        include 'invita_amigos.php';
+	}
+
+    if ($aprobados >= 4) {
         echo '<a href="http://www.1001carros.com/index.php/catalogsearch/advanced/result/?marca[]=todos&marca[]=62&marca[]=61&marca[]=60&marca[]=55&marca[]=53&marca[]=87&marca[]=88&marca[]=92&marca[]=93&marca[]=3562&marca[]=98&marca[]=100&marca[]=101&marca[]=104&marca[]=105&marca[]=106&marca[]=77&marca[]=78&marca[]=81&marca[]=83&marca[]=85&marca[]=86&marca[]=72&marca[]=75&year_rango1[]=&year_rango2[]=" target="_top"><div style="width:810px; height:600px; background:url(proximo.jpg) no-repeat top center">
 				<div class="puntos">'.$puntos.'</div>
 				</div></a>';
-	}
+    }
+
 	
 	?>
     
