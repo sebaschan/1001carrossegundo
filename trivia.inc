@@ -3,11 +3,11 @@
 /* indice, opciones, consigna, respuesta */
 $trivia = array(
     array(
-        'consigna' => '¿Con qué frecuencia se compra o vende un auto en 1001 Carros?',
+        'consigna' => '¿Con qué frecuencia se toma o vende un auto en 1001 Carros?',
         'respuesta' => 1,
         'indice' => 'frecuencia-cv',
         'opciones' => array(
-            'Uno cada hora y medía',
+            '2 por hora',
             '5 por día',
             '1 por día'
         )
@@ -43,7 +43,7 @@ $trivia = array(
         )
     ),
     array(
-        'consigna' => '¿Cuántos carros hemos vendido y comprado en nuestros dos años?',
+        'consigna' => '¿Cuántos carros hemos vendido y tomado en nuestros dos años?',
         'respuesta' => 0,
         'indice' => 'cantidad-cv',
         'opciones' => array(
