@@ -44,7 +44,7 @@ $trivia = array(
     ),
     array(
         'consigna' => '¿Cuántos carros hemos vendido y tomado en nuestros dos años?',
-        'respuesta' => 0,
+        'respuesta' => 2,
         'indice' => 'cantidad-cv',
         'opciones' => array(
             'más de 2000',
@@ -56,16 +56,23 @@ $trivia = array(
 
 define('PREGUNTAS', 5);
 
+function nestor_log($t) {
+    file_put_contents('nestor.log', $t, FILE_APPEND);
+}
+
 function are_right($answers) {
     global $trivia;
     $cnt_answers = count($answers);
     $points = 0;
 
+    nestor_log('hello');
+    nestor_log(json_encode($answers));
     foreach($trivia as $t) {
         if (isset($answers[$t['indice']]) && (int)$answers[$t['indice']] == $t['respuesta']) {
             $points++;
         }
     }
+    nestor_log($points);
 
     return $points == $cnt_answers;
 }

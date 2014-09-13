@@ -56,16 +56,17 @@
                 }));
             });
             this.form.submit();
-            this.pasadas = 0;
-            this.respuestas = 0;
+        } else {
+            //mostramos proxima pregunta
+            this.__mostrar();
         }
-        //mostramos proxima pregunta
-        this.__mostrar();
     };
     Trivia.prototype.__mostrar = function() {
         var pregunta = this.preguntas[this.pasadas];
         this.radios.prop('checked', false);
-        this.consigna = pregunta.consigna;
+        this.consigna.text(pregunta.consigna);
+        console.log(this.consigna);
+        console.log(pregunta.consigna);
         this.labels.eq(0).text(pregunta.opciones[0]);
         this.labels.eq(1).text(pregunta.opciones[1]);
         this.labels.eq(2).text(pregunta.opciones[2]);
@@ -73,11 +74,11 @@
     Trivia.prototype.start = function() {
         var self = this;
         self.pasadas = 0;
-        self.respuestas = [];
+        self.respuestas = {};
         self.__mostrar();
         self.boton.click(function(){
             self.answer();
-        })
+        });
     };
     $.Trivia = Trivia;
 })(jQuery);
