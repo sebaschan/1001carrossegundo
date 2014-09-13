@@ -23,7 +23,7 @@ if (!empty($_POST) &&
         mysql_select_db($databasename) or die("Could not select database");
 
         //insertamos peticion
-        $template = "insert into juega_trivia values (NULL, %s, %s)";
+        $template = "insert into juega_trivia values (NULL, '%s', '%s')";
         mysql_query(sprintf($template,
             mysql_real_escape_string($fbid, $link),
             mysql_real_escape_string(json_encode($answers), $link)), $link);
