@@ -7,7 +7,7 @@
 
     <div style="position:absolute; top:320px; left:40px; width: 588px; height: 244px">
 
-        <div class="center" style="text-align: center; width: 50%; height: 50%">
+        <div class="center margen-pa-los-pibes" style="text-align: center; width: 50%; height: 50%; top: 40%">
             <div id="consigna" style="text-align: center"></div>
             <div style="position: relative; display: inline-block; text-align: left">
                 <input type="radio" name="option" id="option1" value="1"><label class="option" for="option1">Opcion 1</label><br />

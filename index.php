@@ -72,6 +72,12 @@ if ($user) {
           top: 50%;
           position: absolute
       }
+      .margen-pa-los-pibes > div {
+          margin-bottom: 20px;
+      }
+      .margen-pa-los-pibes > div:last-child {
+          margin-bottom: 0;
+      }
       .clickable {
           cursor: pointer;
       }
