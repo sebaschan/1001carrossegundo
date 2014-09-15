@@ -224,3 +224,10 @@ create table `juega_trivia` (
     `fbid` VARCHAR(255) NOT NULL UNIQUE,
     `respuestas` TEXT NOT NULL
 );
+
+DROP TABLE if exists selfie;
+create table selfie (
+    id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    fbid VARCHAR(255) NOT NULL UNIQUE,
+    image VARCHAR(255) NOT NULL UNIQUE
+)
