@@ -79,7 +79,7 @@ $databasepassword = "Milunani2014!";
 	}
       .center {
           transform: translate(-50%, -50%);
-          -wekit-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
           -moz-transform: translate(-50%, -50%);
           -o-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
