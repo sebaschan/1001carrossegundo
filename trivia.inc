@@ -13,7 +13,7 @@ $trivia = array(
         )
     ),
     array(
-        'consigna' => '¿En qué ciduades del Ecuador se encuentra 1001 Carros?',
+        'consigna' => '¿En qué ciudades del Ecuador se encuentra 1001 Carros?',
         'respuesta' => 2,
         'indice' => 'ciudades',
         'opciones' => array(
