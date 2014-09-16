@@ -20,7 +20,7 @@
 	
 	$query1 = "INSERT INTO datos VALUES (NULL,'".$nombre."','".$telefono."','".$cedula."','".$carro."','".$vende."','".$marca."','".$modelo."','".$ano."','".$fbid."')";
 	mysql_query($query1);
-	$query3 = "INSERT INTO puntos VALUES ('".$fbid."','100','1','".$fecha."')";
+	$query3 = "INSERT INTO puntos VALUES (NULL,'".$fbid."','100','1','".$fecha."')";
 	mysql_query($query3);
 	
 	//echo json_encode($_POST);

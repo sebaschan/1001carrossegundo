@@ -30,7 +30,7 @@ if($_POST){
 	if($c == 0){
 		$query1 = "INSERT INTO usuarios VALUES ('".$fbid."','".$nombre."','".$apellido."','".$username."','".$email."','".$cumple."','".$sexo."','".$ciudad."')";
 		mysql_query($query1);
-		$query3 = "INSERT INTO puntos VALUES ('".$fbid."','100','1','".$fecha."')";
+		$query3 = "INSERT INTO puntos VALUES (NULL, '".$fbid."','100','1','".$fecha."')";
 		mysql_query($query3);
 		
 		include "registrado.inc";

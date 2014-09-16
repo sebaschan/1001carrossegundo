@@ -30,7 +30,7 @@ if (!empty($_POST) && isset($_POST['fbid']) && ($fbid = $_POST['fbid'])) {
             mysql_real_escape_string($fbids, $link)), $link);
 
         //insertamos puntos
-        $template2 = "INSERT INTO puntos VALUES (%s, '100', '1', NOW())";
+        $template2 = "INSERT INTO puntos VALUES (NULL, '%s', '100', '1', NOW())";
         mysql_query(sprintf($template2, mysql_real_escape_string($fbid, $link)), $link);
 
     }

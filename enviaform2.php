@@ -25,7 +25,7 @@
 	
 	$query1 = "INSERT INTO amigos VALUES ('".$fbid."','".$amn1."','".$ama1."','".$amt1."','".$amn2."','".$ama2."','".$amt2."','".$amn3."','".$ama3."','".$amt3."','".$amn4."','".$ama4."','".$amt4."','".$fecha."')";
 	mysql_query($query1);
-	$query3 = "INSERT INTO puntos VALUES ('".$fbid."','100','1','".$fecha."')";
+	$query3 = "INSERT INTO puntos VALUES (NULL, '".$fbid."','100','1','".$fecha."')";
 	mysql_query($query3);
 	
 	//echo json_encode($_POST);
