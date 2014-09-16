@@ -9,9 +9,11 @@
 
         <div class="center margen-pa-los-pibes" style="text-align: center; width: 50%; height: 50%; top: 40%">
             <div id="consigna" style="text-align: center"></div>
-            <input type="radio" name="option" id="option1" value="1"><label class="option" for="option1">Opcion 1</label><br />
-            <input type="radio" name="option" id="option2" value="2"><label class="option" for="option2">Opcion 2</label><br />
-            <input type="radio" name="option" id="option3" value="3"><label class="option" for="option3">Opcion 3</label><br />
+            <div style="position: relative; display: inline-block; text-align: left">
+                <input type="radio" name="option" id="option1" value="1"><label class="option" for="option1">Opcion 1</label><br />
+                <input type="radio" name="option" id="option2" value="2"><label class="option" for="option2">Opcion 2</label><br />
+                <input type="radio" name="option" id="option3" value="3"><label class="option" for="option3">Opcion 3</label><br />
+            </div>
             <div style="position: relative; width: 100%; height: 43px">
                 <div id="Enviar" class="center" style="cursor: pointer"></div>
             </div>
