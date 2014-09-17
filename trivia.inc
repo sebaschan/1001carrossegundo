@@ -23,7 +23,7 @@ $trivia = array(
         )
     ),
     array(
-        'consigna' => '¿Qué sorteamos por nusetro Segundo Aniversario?',
+        'consigna' => '¿Qué sorteamos por nuestro Segundo Aniversario?',
         'respuesta' => 3,
         'indice' => 'premio',
         'opciones' => array(
