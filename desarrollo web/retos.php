@@ -115,10 +115,33 @@ $databasepassword = "Milunani2014!";
       #selfie-picture {
           visibility: hidden;
       }
+      #browser-wars {
+          position: absolute;
+          border: 1px solid black;
+          background-color: rgba(255, 255, 127, 0.5);
+          color: black;
+          text-align: center;
+          height: 25px;
+          width: 80%;
+          left: 10%;
+          top: 575px;
+          font-size: 10px;
+          display: none;
+      }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
   </head>
   <body>
+      <div id="browser-wars">
+          la aplicaci&oacute;n puede no funcionar correctamente en su navegador actual. Se recomienda actualizar a una versi&oacute;n m&aacute;s reciente o cambiar de navegador.
+      </div>
+      <script type="text/javascript">
+          if (typeof document.all != 'undefined' && typeof window.atob == 'undefined') {
+              //internet explorer 9
+              var div = document.getElementById('browser-wars').style.display = 'block';
+          }
+      </script>
 
 	<?php
 	
@@ -179,6 +202,6 @@ $databasepassword = "Milunani2014!";
 
 	
 	?>
-    
+
   </body>
 </html>
