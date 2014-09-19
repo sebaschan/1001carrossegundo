@@ -128,11 +128,28 @@ $databasepassword = "Milunani2014!";
           font-size: 10px;
           display: none;
       }
+      #tyc {
+          position: absolute;
+          height: 82px;
+          width: 85px;
+          background: url('../icono_terminos.png') center center no-repeat;
+          right: 0;
+          top: 515px;
+          cursor: pointer;
+      }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#tyc").click(function(){
+                window.open('../tyc1001carros.pdf', 'tyc');
+            });
+        });
+    </script>
   </head>
   <body>
+      <div id="tyc"></div>
       <div id="browser-wars">
           la aplicaci&oacute;n puede no funcionar correctamente en su navegador actual. Se recomienda actualizar a una versi&oacute;n m&aacute;s reciente o cambiar de navegador.
       </div>
